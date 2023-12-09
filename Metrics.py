@@ -48,7 +48,8 @@ def cacule_metrics(y_true,y_pred):
 
 
 def save_metrics(data,name_file):
-    data.to_csv("../Resultados/"+name_file, encoding = 'utf-8', index = False)
+    data.to_csv("Resultados/"+name_file, encoding = 'utf-8', index = False)
+    
 
 
 
