@@ -51,6 +51,10 @@ def save_metrics(data,name_file):
     data.to_csv("Resultados/"+name_file, encoding = 'utf-8', index = False)
     
 
+def save_tuning(data,name_file):
+    data.to_csv("Tuning/"+name_file, encoding = 'utf-8', index = False)
+    
+
 
 
     
