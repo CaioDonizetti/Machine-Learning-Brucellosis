@@ -36,13 +36,17 @@ def cacule_metrics(y_true,y_pred):
     #    gmean_mba,
     #    gmean}
     
-    metrics = {'sensitivity':[sensitivity],
-    'specificity':[specificity],
-    'precision':[precision],
-    'f1score':[f1score],
-    'f2score':[f2score],
-    'gmean_mba':[gmean_mba],
-    'gmean':[gmean]}
+    metrics = {'tn':[tn],
+                'fp':[fp],
+                'fn':[fn],
+                'tp':[tp],         
+                'sensitivity':[sensitivity],
+                'specificity':[specificity],
+                'precision':[precision],
+                'f1score':[f1score],
+                'f2score':[f2score],
+                'gmean_mba':[gmean_mba],
+                'gmean':[gmean]}
     
     return pd.DataFrame(data=metrics)
 
